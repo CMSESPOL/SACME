@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://www.academico.espol.edu.ec/services/directorioEspol.asmx?wsdl" docRef="http://www.academico.espol.edu.ec/services/directorioEspol.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://www.academico.espol.edu.ec/services/directorioEspol.asmx" xmlns:q1="http://academico.espol.edu.ec/webservices/" binding="q1:directorioEspolSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://www.academico.espol.edu.ec/services/directorioEspol.asmx" xmlns:q2="http://academico.espol.edu.ec/webservices/" binding="q2:directorioEspolSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

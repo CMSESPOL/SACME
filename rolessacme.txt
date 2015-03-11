@@ -1,0 +1,12 @@
+lider de rama: reportes de su rama - actividad mensual, anual
+		eventos (total)
+
+lider y vicelider: control total
+
+advisor: sólo consultas, no registrar, no editar
+
+encargado de proyecto: control total de su proyecto
+
+usuario normal: solo consultar sus datos y consultar eventos
+
+		

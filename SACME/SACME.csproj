@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{93EBF312-DF84-4AE9-A391-E55FC4AA4768}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SACME</RootNamespace>
+    <AssemblyName>SACME</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\SACME.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Shared.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics4.Win.Misc.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v12.2, Version=12.2.20122.1006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Branch.cs" />
+    <Compile Include="Connector.cs" />
+    <Compile Include="ConnectorSingle.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="Form_aboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_aboutUs.Designer.cs">
+      <DependentUpon>Form_aboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_academicControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_academicControl.Designer.cs">
+      <DependentUpon>Form_academicControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_academicControlConsult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_academicControlConsult.Designer.cs">
+      <DependentUpon>Form_academicControlConsult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_academicControlRegistry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_academicControlRegistry.Designer.cs">
+      <DependentUpon>Form_academicControlRegistry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_branch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_branch.designer.cs">
+      <DependentUpon>Form_branch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_genericAddRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_genericAddRemove.Designer.cs">
+      <DependentUpon>Form_genericAddRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Initial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Initial.designer.cs">
+      <DependentUpon>Form_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_main.designer.cs">
+      <DependentUpon>Form_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_modifyEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_modifyEvent.Designer.cs">
+      <DependentUpon>Form_modifyEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_myAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_myAccount.Designer.cs">
+      <DependentUpon>Form_myAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_uploadDataBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_uploadDataBranch.designer.cs">
+      <DependentUpon>Form_uploadDataBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_users.Designer.cs">
+      <DependentUpon>Form_users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_event.Designer.cs">
+      <DependentUpon>Form_event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_usersConsult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_usersConsult.designer.cs">
+      <DependentUpon>Form_usersConsult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_usersPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_usersPassword.designer.cs">
+      <DependentUpon>Form_usersPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_usersRegistry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_usersRegistry.designer.cs">
+      <DependentUpon>Form_usersRegistry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_participants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_participants.designer.cs">
+      <DependentUpon>Form_participants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageRdlGenerator.cs" />
+    <Compile Include="Menu_Reporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Reporte.designer.cs">
+      <DependentUpon>Menu_Reporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RdlGenerator.cs" />
+    <Compile Include="ReportDefinition.cs" />
+    <Compile Include="Reportes.cs" />
+    <Compile Include="Reportes_General.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes_General.designer.cs">
+      <DependentUpon>Reportes_General.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes_Miembros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes_Miembros.designer.cs">
+      <DependentUpon>Reportes_Miembros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes_Postulantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes_Postulantes.designer.cs">
+      <DependentUpon>Reportes_Postulantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Actividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Actividades.designer.cs">
+      <DependentUpon>Reporte_Actividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Actividades_Rama_Mensual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Actividades_Rama_Mensual.designer.cs">
+      <DependentUpon>Reporte_Actividades_Rama_Mensual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Actividad_Rama_Anual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Actividad_Rama_Anual.designer.cs">
+      <DependentUpon>Reporte_Actividad_Rama_Anual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DirectorioEspol\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SqlManager.cs" />
+    <Compile Include="TableRdlGenerator.cs" />
+    <Compile Include="TextboxRdlGenerator.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="Form_aboutUs.resx">
+      <DependentUpon>Form_aboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_academicControl.resx">
+      <DependentUpon>Form_academicControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_academicControlConsult.resx">
+      <DependentUpon>Form_academicControlConsult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_academicControlRegistry.resx">
+      <DependentUpon>Form_academicControlRegistry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_event.resx">
+      <DependentUpon>Form_event.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_genericAddRemove.resx">
+      <DependentUpon>Form_genericAddRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Initial.resx">
+      <DependentUpon>Form_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_main.resx">
+      <DependentUpon>Form_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_modifyEvent.resx">
+      <DependentUpon>Form_modifyEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_myAccount.resx">
+      <DependentUpon>Form_myAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_uploadDataBranch.resx">
+      <DependentUpon>Form_uploadDataBranch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_users.resx">
+      <DependentUpon>Form_users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_usersConsult.resx">
+      <DependentUpon>Form_usersConsult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_usersPassword.resx">
+      <DependentUpon>Form_usersPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_usersRegistry.resx">
+      <DependentUpon>Form_usersRegistry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_participants.resx">
+      <DependentUpon>Form_participants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Reporte.resx">
+      <DependentUpon>Menu_Reporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes_General.resx">
+      <DependentUpon>Reportes_General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes_Miembros.resx">
+      <DependentUpon>Reportes_Miembros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes_Postulantes.resx">
+      <DependentUpon>Reportes_Postulantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Actividades.resx">
+      <DependentUpon>Reporte_Actividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Actividades_Rama_Mensual.resx">
+      <DependentUpon>Reporte_Actividades_Rama_Mensual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Actividad_Rama_Anual.resx">
+      <DependentUpon>Reporte_Actividad_Rama_Anual.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\DirectorioEspol\directorioEspol.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\DirectorioEspol\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DirectorioEspol\directorioEspol.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DirectorioEspol\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DirectorioEspol\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DirectorioEspol\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\3_1.png" />
+    <Content Include="Resources\5.jpg" />
+    <None Include="Resources\academic.png" />
+    <None Include="Resources\acerca.jpg" />
+    <Content Include="Resources\actualizar2.png" />
+    <None Include="Resources\AddParticipantsOrganizers.png" />
+    <Content Include="Resources\agregar.png" />
+    <Content Include="Resources\buscar.png" />
+    <Content Include="Resources\cancelar1.png" />
+    <None Include="Resources\celula.png" />
+    <Content Include="Resources\consultar3.png" />
+    <None Include="Resources\eventos.gif" />
+    <None Include="Resources\fon.jpg" />
+    <None Include="Resources\dia.jpg" />
+    <Content Include="Resources\fondo-menus1 copy.png" />
+    <Content Include="Resources\fondo-menus1.jpg" />
+    <None Include="Resources\fondo.jpg" />
+    <None Include="Resources\fondo.png" />
+    <None Include="Resources\fondonew.jpg" />
+    <None Include="Resources\fondoini.jpg" />
+    <None Include="Resources\fondopass.jpg" />
+    <None Include="Resources\fondorama.jpg" />
+    <None Include="Resources\fondo2.jpg" />
+    <Content Include="Resources\gifs-lapiz-bailandoPequenio.gif" />
+    <Content Include="Resources\guardar.png" />
+    <Content Include="Resources\habilitar.png" />
+    <Content Include="Resources\imprimir.gif" />
+    <Content Include="Resources\i¦ündicen.jpg" />
+    <Content Include="Resources\lineas.JPG" />
+    <None Include="Resources\logo.png" />
+    <Content Include="Resources\MiniSearch.png" />
+    <None Include="Resources\ramas.jpg" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\reporte.jpg" />
+    <None Include="Resources\reporte2.png" />
+    <None Include="Resources\reporte3.png" />
+    <None Include="Resources\reporte4.png" />
+    <None Include="Resources\reporte5.jpg" />
+    <None Include="Resources\reporte6.jpg" />
+    <None Include="Resources\organigrama.gif" />
+    <None Include="Resources\miperfil.png" />
+    <None Include="Resources\miper.png" />
+    <Content Include="Resources\sesion.png" />
+    <None Include="Resources\trash.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\top.jpg" />
+    <Content Include="Resources\usuario.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
